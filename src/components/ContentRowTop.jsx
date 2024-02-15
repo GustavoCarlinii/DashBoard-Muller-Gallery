@@ -1,5 +1,6 @@
 import ContentRowInfo  from "./ContentRowInfo";
 import LastProductInDb from "./LastProductInDb";
+
 function ContentRowTop () {
     return (
         <div className="container-fluid">
@@ -9,7 +10,8 @@ function ContentRowTop () {
 		<ContentRowInfo/>	
 					
 		<div className="Row">
-		<LastProductInDb/>			
+		<LastProductInDb/>	
+		
 			</div>		
 		</div>
     

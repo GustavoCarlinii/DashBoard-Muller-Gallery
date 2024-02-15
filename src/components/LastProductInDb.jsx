@@ -18,7 +18,7 @@ function LastProductInDb() {
 
             if (productsDetailResponse) {
                 setProductsDetail(productsDetailResponse)
-              }
+            }
         }
         getData()
     }, [])
@@ -34,11 +34,9 @@ function LastProductInDb() {
                     <div className="text-center">
                         <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ "width": "40rem" }} src={`http://localhost:3000${detailLastProduct.img}`} alt=" img " />
                     </div>
-                    <p>Detalle del producto: {detailLastProduct.description}</p>
+                    <p>Descripcion: {detailLastProduct.description}</p>
                     <p>Precio: ${detailLastProduct.price}</p>
-                    <p>Para: {detailLastProduct.pet}</p>
-                    {/* <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View product detail</a> */}
-                    <Link className="btn btn-danger"  rel="nofollow" to={`/product/${detailLastProduct.id}`}>Detail</Link>
+                    <Link className="btn btn-danger"  rel="nofollow" to={`/product/${detailLastProduct.id}`}>Detalle</Link>
 
                 </div>
             </div>

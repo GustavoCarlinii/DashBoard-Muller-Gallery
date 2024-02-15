@@ -24,12 +24,16 @@ const UserDetail = () => {
         <div className="col-lg-6 mb-4">
             <div className="card shadow mb-4">
                 <div className="card-header py-3">
-                    <h5 className="m-0 font-weight-bold text-gray-800">Usuario: {user.first_name}</h5>
+                    <h5 className="m-0 font-weight-bold text-gray-800">Usuario: {user.id}</h5>
                 </div>
                 <div className="card-body">
                     <p>Nombre: {user.first_name}</p>
                     <p>Apellido: {user.last_name}</p>
                     <p>Email: {user.email}</p>
+                    <p>Phone: {user.phone}</p>
+                    <p>Adress: {user.adress}</p>
+                    <p>Birthdate: {user.birthdate}</p>
+                    <p>Postal Code: {user.postal_code}</p>
                 </div>
             </div>
         </div>

@@ -38,7 +38,6 @@ function ContentRowMovies() {
             const productsResponse = await productService.get()
             const usersResponse = await userService.get()
             setProducts(productsResponse.products)
-            // Cambiar cuando se implemente servicio de usuarios
             setUsers(usersResponse)
 
 
